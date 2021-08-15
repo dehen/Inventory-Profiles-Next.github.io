@@ -38,6 +38,7 @@ edit_uri: https://github.com/Inventory-Profiles-Next/Inventory-Profiles-Next.git
 nav:
   - Inventory Profiles Next:
     - Overview: index.md
+    - Download: download.md
     - Installation: installation.md
     - Profiles: profiles.md
     - Custom rules:
