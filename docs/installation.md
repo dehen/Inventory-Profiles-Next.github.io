@@ -1,14 +1,5 @@
 # Installation
 
-=== "Forge"
-
-    **Requirements:**
-    
-    - 1.17.x: [Forge >= 37.0.17](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.17.1.html)
-    - 1.16.5: [Forge >= 36.1.32](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)
-    
-    Place the mod .jar in the `.minecraft/mods` folder.
-
 === "Fabric"
 
     **Requirements:**
@@ -18,6 +9,15 @@
     - [Mod Menu >= 2.0.2](https://www.curseforge.com/minecraft/mc-mods/modmenu) (*optional*)
 
     Make sure you have [Fabric](https://fabricmc.net/) installed, and place the mod .jar in the `.minecraft/mods` folder. This mod requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api).
+
+=== "Forge"
+
+    **Requirements:**
+    
+    - 1.17.x: [Forge >= 37.0.17](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.17.1.html)
+    - 1.16.5: [Forge >= 36.1.32](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html)
+    
+    Place the mod .jar in the `.minecraft/mods` folder.
 
 ## Migrate
 
