@@ -1,0 +1,14 @@
+/* More space at the bottom of the page */
+.md-footer {
+    margin-top: 1.5rem;
+}
+
+/* Hide main nav title */
+@media (min-width: 1220px) {
+    label[for="__drawer"] {
+        display: none;
+    }
+    .md-nav__list > *:first-child {
+        margin-top: 0;
+    }
+}

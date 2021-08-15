@@ -1,0 +1,62 @@
+site_name: Inventory Profiles Next
+
+theme:
+  name: material
+
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - navigation.sections
+
+markdown_extensions:
+  - pymdownx.tabbed
+
+repo_url: https://github.com/blackd/Inventory-Profiles
+repo_name: Inventory-Profiles
+
+edit_uri: ""
+
+nav:
+  - Inventory Profiles Next:
+    - Overview: index.md
+    - Installation: installation.md
+    - Profiles: profiles.md
+    - Custom rules:
+      - Add a custom rule: custom_rules/add.md
+      - List of native rules & parameters: custom_rules/natives.md
+  
+  - Project details:
+    - Changelog: changelog.md
+    - Known issues: known-issues.md
+    - Contributing: contributing.md
+    - Thanks: thanks.md
+    - License: license.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Inventory-Profiles-Next
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/23YCxmveUM
+    - icon: fontawesome/solid/fire
+      link: https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next
+    - icon: fontawesome/solid/wrench
+      link: https://modrinth.com/mod/inventory-profiles-next
+
+extra_css:
+  - stylesheets/extra.css
