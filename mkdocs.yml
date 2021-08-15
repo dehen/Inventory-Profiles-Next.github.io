@@ -30,6 +30,26 @@ markdown_extensions:
   - pymdownx.tabbed
 
 plugins:
+  - i18n:
+      default_language: en
+      languages:
+        en: english
+        fr: français
+      nav_translations:
+        fr:
+          Overview: Présentation
+          Download: Téléchargements
+          Installation: Installation
+          Profiles: Profils
+          Custom rules: Règles personnalisées
+          Add a custom rule: Ajouter une règle personnalisée
+          List of native rules & parameters: Liste des règles & paramètres natifs
+          Project details: Détails du projet
+          Changelog: Historique des changements
+          Known issues: Problèmes connus
+          Contributing: Contribuer
+          Thanks: Merci
+          License: License
   - minify:
       minify_html: true
 
@@ -65,6 +85,14 @@ extra:
       link: https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next
     - icon: fontawesome/solid/wrench
       link: https://modrinth.com/mod/inventory-profiles-next
+
+  alternate:
+    - name: English
+      lang: en
+      link: ./
+    - name: Français
+      lang: fr
+      link: ./fr/
 
 extra_css:
   - stylesheets/extra.css
