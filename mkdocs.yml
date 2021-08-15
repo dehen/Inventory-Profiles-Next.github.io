@@ -33,7 +33,7 @@ plugins:
 repo_url: https://github.com/blackd/Inventory-Profiles
 repo_name: Inventory-Profiles
 
-edit_uri: ""
+edit_uri: https://github.com/Inventory-Profiles-Next/Inventory-Profiles-Next.github.io/edit/main/docs/
 
 nav:
   - Inventory Profiles Next:
