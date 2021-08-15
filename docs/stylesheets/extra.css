@@ -12,3 +12,8 @@
         margin-top: 0;
     }
 }
+
+/* Change slate palette colors */
+[data-md-color-scheme="slate"] {
+    --md-hue: 215;
+}
