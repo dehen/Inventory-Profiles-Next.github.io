@@ -16,4 +16,6 @@
 /* Change slate palette colors */
 [data-md-color-scheme="slate"] {
     --md-hue: 215;
+    --md-default-bg-color: #2e3438;
+    --md-footer-bg-color: #22272a;
 }
