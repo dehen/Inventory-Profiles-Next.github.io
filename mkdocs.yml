@@ -4,13 +4,15 @@ theme:
   name: material
 
   palette:
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: deep orange
       accent: deep orange
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: deep orange
       accent: deep orange
       toggle:
