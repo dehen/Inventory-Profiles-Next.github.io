@@ -4,18 +4,18 @@ theme:
   name: material
 
   palette:
-    - scheme: default
-      primary: deep orange
-      accent: deep orange
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
     - scheme: slate
       primary: deep orange
       accent: deep orange
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+    - scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
 
   icon:
     repo: fontawesome/brands/github
