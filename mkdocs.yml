@@ -26,6 +26,10 @@ theme:
 markdown_extensions:
   - pymdownx.tabbed
 
+plugins:
+  - minify:
+      minify_html: true
+
 repo_url: https://github.com/blackd/Inventory-Profiles
 repo_name: Inventory-Profiles
 
