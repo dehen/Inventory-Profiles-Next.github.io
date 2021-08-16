@@ -1,6 +1,6 @@
-# List of native rules & parameters
+# Liste de règles & paramètres natifs
 
-## Parameter
+## Paramètre
 ```
 reverse
     true/false
@@ -49,7 +49,7 @@ nbt_path
 not_found
     first/last
 ```
-## Native Rule
+## Règle native
 #### `[all rule]`
 - `(reverse = false, sub_rule = ::none)`
 
@@ -94,7 +94,7 @@ not_found
 #### `::nbt_comparator`
 #### `::potion_effect`
 
-## Syntax Shortcuts (syntactic sugar)
+## Raccourcis de syntax (sucre syntaxique)
 ### sub_rule
 ```
 [::a](sub_rule = [::b])
