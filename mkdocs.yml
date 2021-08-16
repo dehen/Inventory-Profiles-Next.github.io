@@ -82,7 +82,7 @@ extra:
       link: https://github.com/Inventory-Profiles-Next
     - icon: fontawesome/brands/discord
       link: https://discord.gg/23YCxmveUM
-    - icon: fontawesome/solid/fire
+    - icon: custom/curseforge
       link: https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next
     - icon: custom/modrinth
       link: https://modrinth.com/mod/inventory-profiles-next
