@@ -26,3 +26,8 @@
 .twemoji.modrinth {
     color: #5da545;
 }
+
+/* Icon margins */
+.twemoji {
+    margin: 0 0.5ch;
+}
