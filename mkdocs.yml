@@ -45,8 +45,8 @@ plugins:
         eo:
           Custom rules: Propraj reguloj
           Project details: Informoj de projekto
-  # - minify:
-  #     minify_html: true
+  - minify:
+      minify_html: true
 
 repo_url: https://github.com/blackd/Inventory-Profiles
 repo_name: Inventory-Profiles
