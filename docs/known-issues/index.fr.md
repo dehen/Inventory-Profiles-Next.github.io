@@ -10,6 +10,6 @@
 
 ## Dites-nous !
 
-Si vous rencontrez un problème, veuillez faire un ticker [ici](https://github.com/blackd/Inventory-Profiles/issues)
+Si vous rencontrez un problème, veuillez faire un ticker [ici](https://github.com/blackd/Inventory-Profiles/issues).
 
-Si vous êtes un développeur et voulez aider à résoudre le problème, lire [contribuer](../contributing/index.md)
+Si vous êtes un développeur et voulez aider à résoudre le problème, lire [contribuer](../contributing/index.md).

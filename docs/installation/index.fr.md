@@ -14,7 +14,7 @@ Si vous avez déjà un chargeur de mods et savez déjà comment en installer, il
 
     - [Ce mod](../downloads/index.md)
 
-Si vous ne savez pas comment installer un mod, veuillez suivre le [tutoriel](#tutoriel)
+Si vous ne savez pas comment installer un mod, veuillez suivre le [tutoriel](#tutoriel).
 
 ## Tutoriel
 
