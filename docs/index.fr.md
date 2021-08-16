@@ -17,4 +17,4 @@ Ce mod va:
 
 ## Installation
 
-Voir [Installation](installation/index.md)
+Voir [installation](installation/index.md)

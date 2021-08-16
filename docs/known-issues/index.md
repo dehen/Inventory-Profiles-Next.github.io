@@ -12,4 +12,4 @@
 
 If you encounter an issue, please file a ticket [here](https://github.com/blackd/Inventory-Profiles/issues)
 
-If you are a developer and want to help us fixing the issue, please see [Contributing](../contributing/index.md)
+If you are a developer and want to help us fixing the issue, please see [contributing](../contributing/index.md)

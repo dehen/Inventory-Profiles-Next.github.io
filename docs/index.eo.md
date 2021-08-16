@@ -17,4 +17,4 @@ Tiu kromaĵo:
 
 ## Instalado
 
-Vidu [Instalado](installation/index.md)
+Vidu [instalado](installation/index.md)
