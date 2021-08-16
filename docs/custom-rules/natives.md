@@ -1,4 +1,4 @@
-# List of native rules & parameters
+# Native rules & parameters
 
 ## Parameter
 ```
