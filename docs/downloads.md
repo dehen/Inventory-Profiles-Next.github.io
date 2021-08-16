@@ -1,4 +1,4 @@
-# Download
+# Downloads
 
 You can download the mod on:
 
