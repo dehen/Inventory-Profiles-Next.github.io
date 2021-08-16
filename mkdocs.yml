@@ -30,6 +30,12 @@ theme:
 
 markdown_extensions:
   - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
 
 plugins:
   - i18n:
@@ -78,7 +84,7 @@ extra:
       link: https://discord.gg/23YCxmveUM
     - icon: fontawesome/solid/fire
       link: https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next
-    - icon: fontawesome/solid/wrench
+    - icon: custom/modrinth
       link: https://modrinth.com/mod/inventory-profiles-next
 
 extra_css:
