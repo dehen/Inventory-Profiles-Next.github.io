@@ -34,6 +34,7 @@ plugins:
       default_language: en
       languages:
         en: english
+        eo: Esperanto
         fr: français
       nav_translations:
         fr:
@@ -50,6 +51,20 @@ plugins:
           Contributing: Contribuer
           Thanks: Merci
           License: License
+        eo:
+          Overview: Prezentaĵo
+          Download: Elŝutaĵoj
+          Installation: Instalado
+          Profiles: Profiloj
+          Custom rules: Propraj reguloj
+          Add a custom rule: Aldoni propran regulon
+          List of native rules & parameters: Listo de operaciumaj reguloj & agordoj
+          Project details: Informoj de projekto
+          Changelog: Ŝanĝoprotokolo
+          Known issues: Konataj problemoj
+          Contributing: Kontribuado
+          Thanks: Dankon
+          License: Permesiloj
   - minify:
       minify_html: true
 
@@ -90,6 +105,9 @@ extra:
     - name: English
       lang: en
       link: ./
+    - name: Esperanto
+      lang: eo
+      link: ./eo/
     - name: Français
       lang: fr
       link: ./fr/
