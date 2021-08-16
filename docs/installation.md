@@ -1,5 +1,7 @@
 # Installation
 
+You must have [downloaded the mod](download.md)
+
 === "Fabric"
 
     **Requirements:**
