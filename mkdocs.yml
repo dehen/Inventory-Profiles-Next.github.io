@@ -34,6 +34,7 @@ plugins:
       default_language: en
       languages:
         en: english
+        eo: Esperanto
         fr: français
       nav_translations:
         fr:
@@ -82,6 +83,9 @@ extra:
     - name: English
       lang: en
       link: ./
+    - name: Esperanto
+      lang: eo
+      link: ./eo/
     - name: Français
       lang: fr
       link: ./fr/
