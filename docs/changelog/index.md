@@ -18,7 +18,7 @@
 - Added support for single click/press inventory throw. Hotkey can be configured in Hotkeys. Disabled by default. This obeys the same rules for hotbar as "move all". 
 - Fixed Shift+Click Ctrl+Q skipping locked slots to work on servers. 
 - Clarified, in the tooltip, that not picking up items in locked slots works only in single player. Support for servers will require service side mod.
-- We now have a discord server **[![2][2]][1]**
+- We now have a discord server
 
 ### 0.8.0
 - Shift+Click Ctrl+Q can now be disabled and enabled (default) for locked slots. This also applies for swipe variant of the actions.
