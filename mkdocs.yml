@@ -65,8 +65,8 @@ nav:
     - Installation: installation.md
     - Profiles: profiles.md
     - Custom rules:
-      - Add a custom rule: custom_rules/add.md
-      - List of native rules & parameters: custom_rules/natives.md
+      - Add a custom rule: custom-rules/add.md
+      - List of native rules & parameters: custom-rules/natives.md
   
   - Project details:
     - Changelog: changelog.md
