@@ -42,7 +42,7 @@ To run this mod, you need a mod loader. There are two: [Fabric](https://fabricmc
     1. [Download Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
     2. [Download the mod](../downloads/index.md)
     3. *Optionally*, to access the mod settings more easily, [download Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu)
-    3. Place them in the `.minecraft/mods` folder[^1]
+    4. Place them in the `.minecraft/mods` folder[^1]
 
 === "Forge"
 
