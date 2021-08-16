@@ -34,7 +34,6 @@ plugins:
       default_language: en
       languages:
         en: english
-        eo: Esperanto
         fr: français
       nav_translations:
         fr:
@@ -54,19 +53,19 @@ edit_uri: https://github.com/Inventory-Profiles-Next/Inventory-Profiles-Next.git
 nav:
   - Inventory Profiles Next:
     - index.md
-    - downloads.md
-    - installation.md
+    - downloads/index.md
+    - installation/index.md
     # - profiles.md
     - Custom rules:
-      - custom-rules/add.md
-      - custom-rules/natives.md
+      - custom-rules/add/index.md
+      - custom-rules/natives/index.md
   
   - Project details:
-    - changelog.md
-    - known-issues.md
-    - contributing.md
-    - thanks.md
-    - license.md
+    - changelog/index.md
+    - known-issues/index.md
+    - contributing/index.md
+    - thanks/index.md
+    - license/index.md
 
 extra:
   social:
@@ -83,9 +82,6 @@ extra:
     - name: English
       lang: en
       link: ./
-    - name: Esperanto
-      lang: eo
-      link: ./eo/
     - name: Français
       lang: fr
       link: ./fr/

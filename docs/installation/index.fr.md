@@ -1,6 +1,6 @@
 # Installation
 
-Il faut avoir [téléchargé le mod](download.md)
+Il faut avoir [téléchargé le mod](../downloads/index.md)
 
 === "Fabric"
 
