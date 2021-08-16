@@ -51,7 +51,7 @@ Toutes les règles préfixées avec `@`/`::`.
     - Chaque ligne définit une sous-règle
     - `(` `)` arguments facultatifs
 
-Liste des règles personnalisées natives: voir [Liste de règles & paramètres natifs](natives.md)
+Liste des règles personnalisées natives: voir [Liste de règles & paramètres natifs](../natives/index.md)
 
 ### Exemple
 
