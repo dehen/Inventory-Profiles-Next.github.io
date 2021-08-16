@@ -6,7 +6,7 @@
 
     - [Fabric Loader >= 0.11.6](https://fabricmc.net/use/)
     - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-    - [Mod Menu >= 2.0.2](https://www.curseforge.com/minecraft/mc-mods/modmenu) (*optional*)
+    - [Mod Menu >= 2.0.2](https://www.curseforge.com/minecraft/mc-mods/modmenu) (*optional*, to access settings easily)
 
     Make sure you have [Fabric](https://fabricmc.net/) installed, and place the mod .jar in the `.minecraft/mods` folder. This mod requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api).
 

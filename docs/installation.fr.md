@@ -8,7 +8,7 @@ Il faut avoir [téléchargé le mod](download.md)
 
     - [Fabric Loader >= 0.11.6](https://fabricmc.net/use/)
     - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-    - [Mod Menu >= 2.0.2](https://www.curseforge.com/minecraft/mc-mods/modmenu) (*facultatif*)
+    - [Mod Menu >= 2.0.2](https://www.curseforge.com/minecraft/mc-mods/modmenu) (*facultatif*, pour accéder facilement aux paramètres)
 
     Assurez-vous d'avoir installé [Fabric](https://fabricmc.net/) et placez le .jar du mod et de l'API dans le dossier `.minecraft/mods`.
 
