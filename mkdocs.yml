@@ -56,7 +56,7 @@ nav:
     - index.md
     - downloads.md
     - installation.md
-    - profiles.md
+    # - profiles.md
     - Custom rules:
       - custom-rules/add.md
       - custom-rules/natives.md
