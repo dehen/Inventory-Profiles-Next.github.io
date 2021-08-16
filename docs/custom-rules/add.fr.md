@@ -1,4 +1,4 @@
-# Guide pour ma première règle personnalisée
+# Ajouter une règle
 
 ## Format
 

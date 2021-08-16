@@ -1,4 +1,4 @@
-# Guide to my first custom rule
+# Add a rule
 
 ## Format
 

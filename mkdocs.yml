@@ -38,33 +38,11 @@ plugins:
         fr: français
       nav_translations:
         fr:
-          Overview: Présentation
-          Download: Téléchargements
-          Installation: Installation
-          Profiles: Profils
           Custom rules: Règles personnalisées
-          Add a custom rule: Ajouter une règle personnalisée
-          Native rules & parameters: Règles & paramètres natifs
           Project details: Détails du projet
-          Changelog: Historique des changements
-          Known issues: Problèmes connus
-          Contributing: Contribuer
-          Thanks: Merci
-          License: License
         eo:
-          Overview: Prezentaĵo
-          Download: Elŝutaĵoj
-          Installation: Instalado
-          Profiles: Profiloj
           Custom rules: Propraj reguloj
-          Add a custom rule: Aldoni propran regulon
-          Native rules & parameters: Operaciumaj reguloj & agordoj
           Project details: Informoj de projekto
-          Changelog: Ŝanĝoprotokolo
-          Known issues: Konataj problemoj
-          Contributing: Kontribuado
-          Thanks: Dankon
-          License: Permesiloj
   - minify:
       minify_html: true
 
@@ -75,20 +53,20 @@ edit_uri: https://github.com/Inventory-Profiles-Next/Inventory-Profiles-Next.git
 
 nav:
   - Inventory Profiles Next:
-    - Overview: index.md
-    - Download: download.md
-    - Installation: installation.md
-    - Profiles: profiles.md
+    - index.md
+    - download.md
+    - installation.md
+    - profiles.md
     - Custom rules:
-      - Add a custom rule: custom-rules/add.md
-      - Native rules & parameters: custom-rules/natives.md
+      - custom-rules/add.md
+      - custom-rules/natives.md
   
   - Project details:
-    - Changelog: changelog.md
-    - Known issues: known-issues.md
-    - Contributing: contributing.md
-    - Thanks: thanks.md
-    - License: license.md
+    - changelog.md
+    - known-issues.md
+    - contributing.md
+    - thanks.md
+    - license.md
 
 extra:
   social:
