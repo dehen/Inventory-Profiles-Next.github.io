@@ -1,7 +1,9 @@
 site_name: Inventory Profiles Next
+site_description: An inventory sorter mod
 
 theme:
   name: material
+  custom_dir: overrides
 
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -43,6 +45,8 @@ plugins:
         eo:
           Custom rules: Propraj reguloj
           Project details: Informoj de projekto
+  # - minify:
+  #     minify_html: true
 
 repo_url: https://github.com/blackd/Inventory-Profiles
 repo_name: Inventory-Profiles
