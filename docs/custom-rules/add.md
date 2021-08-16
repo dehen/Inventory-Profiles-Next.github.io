@@ -1,8 +1,8 @@
-# Guide pour ma première règle personnalisée
+# Guide to my first custom rule
 
 ## Format
 
-Un fichier de règle personnalisée `rules.txt` a le format suivant.
+A custom rule file `rules.txt` has the following format.
 
 ```
 @[my rule name]
@@ -11,7 +11,7 @@ Un fichier de règle personnalisée `rules.txt` a le format suivant.
     [...]
 ```
 
-Une règle peut en définir plusieurs autres. Par exemple (la règle par défaut):
+A rule file can define multiple rules. For example (the default rule):
 
 ```
 @default
@@ -31,13 +31,13 @@ Une règle peut en définir plusieurs autres. Par exemple (la règle par défaut
     ::nbt_comparator
 ```
 
-Vous pouvez créer plusieurs fichiers de règle: `rules.txt`, `rules.1.txt`, `rules.2.txt`, `rules.myname.txt`, `rules.*.txt` etc. Ils doivent tous être dans le dossier `.minecraft/config/inventoryprofiles`.
+You can create multiple rule files: `rules.txt`, `rules.1.txt`, `rules.2.txt`, `rules.myname.txt`, `rules.*.txt` etc. They all should located in `.minecraft/config/inventoryprofiles` folder.
 
-### Explication du format des règles
+### Rule Format Explain
 
-Toutes les règles préfixées avec `@`/`::`.
-- `@` règle personnalisée
-- `::` règle native
+All rules prefixed with `@`/`::`. 
+- `@` custom rule
+- `::` native rule
 
 ```
 @[my rule name]
@@ -46,19 +46,19 @@ Toutes les règles préfixées avec `@`/`::`.
     [...]
 ```
 
-- La première ligne définit le nom de la règle (commence toujours par `@`)
-- Les autres lignes définissent le contenu (indenté de 4 espaces)
-    - Chaque ligne définit une sous-règle
-    - `(` `)` arguments facultatifs
+- First line defines rule name (always start with `@`)
+- Second line and after define content (4 space indented)
+    - Each line defines a sub rule
+    - `(` `)` optional arguments
 
-Liste des règles personnalisées natives: voir [Liste de règles & paramètres natifs](natives.md)
+Native rule list: see [List of Native Rule & Parameter](List-of-Native-Rule-&-Parameter)
 
-### Exemple
+### Example
 
-Une règle personnalisée `hello`
-- `apple` en premier
-- `diamond_sword` avec la durabilité dans l'ordre croissant
-- par nom d'affichage, puis la durabilité dans l'ordre décroissant
+A custom rule named `hello`
+- `apple` first
+- `diamond_sword` with durability low to high
+- rest by display name, then durability from high to low
 
 ```
 @hello
@@ -68,25 +68,25 @@ Une règle personnalisée `hello`
     !::durability
 ```
 
-#### Avant
+#### Before
 
 ![](https://i.imgur.com/Ll7J30E.png)
 
-#### Après
+#### After
 
 ![](https://i.imgur.com/LnXLpoZ.png)
 
-### Remplacement de règle
+### Rule Override
 
-Vous pouvez remplacer la règle par défaut et n'importe quelle autre règle personnalisée (plusieurs déclaration pour le même nom)
-- Règles dans le même fichier
-    - les règles en dernier remplacent les premières
-- Règles dans plusieurs fichiers
-    - trié par nom de fichier (`rules.zzz.txt` remplace `rules.aaa.txt`)
+You can override the default rule and any custom rule (multiple declaration for same rule name)
+- Rules in the same file
+    - later rule override earlier rule
+- Rules in different files
+    - sorted by file name (`rules.zzz.txt` override `rules.aaa.txt`)
 
-Si la règle remplacée ne fonctionne pas, la première règle sera utilisée
+If the overridden custom rule failed to parse, it will find the earlier rule that is valid.
 
-## Règles internes par défaut
+## Internal default rules
 
 ```
 // Default rules file
