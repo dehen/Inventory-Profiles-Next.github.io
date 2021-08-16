@@ -33,9 +33,9 @@ plugins:
   - i18n:
       default_language: en
       languages:
-        en: english
+        en: English
         eo: Esperanto
-        fr: français
+        fr: Français
       nav_translations:
         fr:
           Custom rules: Règles personnalisées
@@ -43,8 +43,6 @@ plugins:
         eo:
           Custom rules: Propraj reguloj
           Project details: Informoj de projekto
-  - minify:
-      minify_html: true
 
 repo_url: https://github.com/blackd/Inventory-Profiles
 repo_name: Inventory-Profiles
@@ -78,17 +76,6 @@ extra:
       link: https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next
     - icon: fontawesome/solid/wrench
       link: https://modrinth.com/mod/inventory-profiles-next
-
-  alternate:
-    - name: English
-      lang: en
-      link: ./
-    - name: Esperanto
-      lang: eo
-      link: ./eo/
-    - name: Français
-      lang: fr
-      link: ./fr/
 
 extra_css:
   - stylesheets/extra.css
