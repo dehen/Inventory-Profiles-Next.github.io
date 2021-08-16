@@ -13,7 +13,7 @@ Ce mod va:
 - Verrouiller des emplacements que le tirage ignorera
 - Garder les emplacements verrouillés vides
 - Vous permettre de faire R+C pour définir vos raccourcis claviers
-- Être 100% côté client, pour fonctionner partout
+- Être 100% côté client, afin de fonctionner partout
 
 ## Installation
 
