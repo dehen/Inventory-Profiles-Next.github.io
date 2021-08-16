@@ -19,15 +19,15 @@
     --md-footer-bg-color: hsla(var(--md-hue), 10%, 12%, 0.87);
 }
 
+/* Icon margins */
+.twemoji {
+    margin: 0 0.5ch;
+}
+
 /* Icon colors */
 .twemoji.github {
     color: black;
 }
 .twemoji.modrinth {
     color: #5da545;
-}
-
-/* Icon margins */
-.twemoji {
-    margin: 0 0.5ch;
 }
