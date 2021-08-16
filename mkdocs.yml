@@ -29,6 +29,7 @@ theme:
     - navigation.instant
 
 markdown_extensions:
+  - footnotes
   - pymdownx.tabbed
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
