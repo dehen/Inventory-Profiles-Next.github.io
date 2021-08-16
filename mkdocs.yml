@@ -40,6 +40,7 @@ markdown_extensions:
           - overrides/.icons
 
 plugins:
+  - search
   - i18n:
       default_language: en
       languages:
