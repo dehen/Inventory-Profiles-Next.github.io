@@ -7,7 +7,7 @@
 Ce mod va:
 
 - Vous aider à garder votre inventaire rangé
-- Remplacé vos outils presque cassés
+- Remplacer vos outils presque cassés
 - Tout mettre dans le coffre en un clic
 - Déplacer les items que vous avez qui sont aussi dans le coffre                                           
 - Verrouiller des emplacements que le tirage ignorera
