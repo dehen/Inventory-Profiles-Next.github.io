@@ -4,7 +4,7 @@
     <img src="https://raw.githubusercontent.com/blackd/Inventory-Profiles/all-in-one/description/output.webp" width="250px">
 </p>
 
-Tiu modo:
+Tiu kromaĵo:
 
 - Helpos vin gardi vian inventaron ordigitan
 - Anstataŭos vian kvazaŭ-rompigitan ilon
