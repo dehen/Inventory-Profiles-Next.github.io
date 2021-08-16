@@ -18,3 +18,11 @@
     --md-default-bg-color: hsla(var(--md-hue),10%,21%,1);
     --md-footer-bg-color: hsla(var(--md-hue), 10%, 12%, 0.87);
 }
+
+/* Icon colors */
+.twemoji.github {
+    color: black;
+}
+.twemoji.modrinth {
+    color: #5da545;
+}
