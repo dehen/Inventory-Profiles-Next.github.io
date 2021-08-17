@@ -90,5 +90,16 @@ extra:
     - icon: custom/modrinth
       link: https://modrinth.com/mod/inventory-profiles-next
 
+  alternate:
+    - name: English
+      lang: en
+      link: ./en/
+    - name: Esperanto
+      lang: eo
+      link: ./eo/
+    - name: Français
+      lang: fr
+      link: ./fr/
+
 extra_css:
   - stylesheets/extra.css
