@@ -2,7 +2,7 @@
 
 ## Brièvement
 
-Si vous avez déjà un chargeur de mods et savez déjà comment en installer, il vous faudra simplement installer les mods suivant.
+Si vous avez déjà un chargeur de mods et savez déjà comment en installer, il vous faudra simplement installer les mods suivants:
 
 === "Fabric"
 

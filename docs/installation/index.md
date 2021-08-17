@@ -2,7 +2,7 @@
 
 ## Briefly
 
-If you already have your mod loader and know how to install a mod, then you just need to install the following mods
+If you already have your mod loader and know how to install a mod, then you just need to install the following mods:
 
 === "Fabric"
 
