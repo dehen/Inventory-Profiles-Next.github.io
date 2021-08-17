@@ -12,14 +12,14 @@ theme:
       primary: deep orange
       accent: deep orange
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/lightbulb
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: deep orange
       accent: deep orange
       toggle:
-        icon: material/lightbulb
+        icon: material/lightbulb-outline
         name: Switch to dark mode
 
   icon:
