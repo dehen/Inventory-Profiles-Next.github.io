@@ -3,6 +3,7 @@ site_description: An inventory sorter mod
 
 theme:
   name: material
+  favicon: assets/favicon.ico
   custom_dir: overrides
 
   palette:
