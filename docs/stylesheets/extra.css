@@ -24,14 +24,6 @@
     margin: 0 0.5ch;
 }
 
-/* Icon colors */
-.twemoji.github {
-    color: black;
-}
-.twemoji.modrinth {
-    color: #5da545;
-}
-
 /* Fixes for the icon in nav */
 nav .twemoji {
     display: inline-flex;
