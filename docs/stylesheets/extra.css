@@ -31,3 +31,12 @@
 .twemoji.modrinth {
     color: #5da545;
 }
+
+/* Fixes for the icon in nav */
+nav .twemoji {
+    display: inline-flex;
+    height: 1.125em;
+    width: 1.125em;
+    fill: currentColor;
+    vertical-align: text-top;
+}
