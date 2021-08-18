@@ -68,7 +68,7 @@ nav:
     - index.md
     - downloads/index.md
     - installation/index.md
-    # - profiles.md
+    # - profiles/index.md
     - Custom rules:
       - custom-rules/add/index.md
       - custom-rules/natives/index.md
