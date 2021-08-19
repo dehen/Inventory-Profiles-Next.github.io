@@ -32,6 +32,8 @@ theme:
 markdown_extensions:
   - footnotes
   - attr_list
+  - toc:
+      toc_depth: 4
   - pymdownx.tabbed
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -68,6 +70,7 @@ nav:
     - index.md
     - downloads/index.md
     - installation/index.md
+    - config/index.md
     # - profiles/index.md
     - Custom rules:
       - custom-rules/add/index.md

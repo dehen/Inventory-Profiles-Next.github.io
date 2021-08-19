@@ -1,0 +1,288 @@
+main_sections:
+  - name: Mod Settings
+    sections:
+      - name: Sorting Options
+        options:
+          - name: Sort Order
+            desc: The sorting method used for inventory sorting
+            default_value: Default (Creative Menu)
+            values:
+              - Default (Creative Menu)
+              - Item Name
+              - Item ID
+              - Item Numerical ID
+              - Custom Rule
+          - name: Custom Rule
+            desc: The rule for custom sorting method
+            default_value: '<code>@custom</code>'
+            values:
+              - The name of a rule
+      - name: Move Matching Items
+        options:
+          - name: Include Hotbar Modifier
+            desc: Hold this key to include hotbar
+            default_value: Alt
+            values:
+              - Key
+          - name: Move All Modifier
+            desc: Hold this key to move/throw all
+            default_value: Shift
+            values:
+              - Key
+          - name: Always Include Hotbar
+            desc: Include hotbar without holding the modifier key (then holding the modifier key is to exclude hotbar)
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Always Move All
+            desc: Move all without holding the modifier key (then holding the modifier key is to move matching items only)
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Always Throw All
+            desc: Throw all without holding the modifier key (then holding the modifier key is to throw matching items only)
+            default_value: false
+            values:
+              - true
+              - false
+      - name: Profiles
+        options:
+          - name: Enable Equipment Profiles Support
+            desc: |
+              <p>Enables profiles support.</p>
+              <p>Profiles are sets of gear you can switch between with a single button.</p>
+              <p>If you wanna learn how to setup the Profile Support go to the "Edit Profiles" page.</p>
+            default_value: true
+            values:
+              - true
+              - false
+      - name: Lock Slots
+        options:
+          - name: Enable Lock Slots
+            desc: "Locked slots are ignored for: sort, move all, clean cursor, continuous crafting supplies storage, auto refill supplies storage (auto refill monitoring slots are not affected). Notice that groups in columns/rows only works if the shape of remaining non-locked slots is rectangular."
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Enable Unique Locked Slots per World / Server
+            desc: |
+              <p>If enabled every server and uniquely named world will have their own locked slots</p>
+              <p>Notice:</p>
+              <ol>
+                <li>If you tend to name all your worlds "New World" they will all share the same locked slots.</li>
+                <li>Servers behind bungeecord/velocity proxies will share locked slots.</li>
+              </ol>
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Switch Config Modifier
+            desc: Config lock slots by "Config Key" while holding this key (Default Alt + Left Click to config lock slots)
+            default_value: Alt
+            values:
+              - Key
+          - name: Config Key
+            desc: Config lock slots while holding modifier key (Default Alt + Left Click to config lock slots)
+            default_value: Left Button
+            values:
+              - Key
+          - name: Quick Config Key
+            desc: Config lock slots without holding modifier key
+            default_value: n/a
+            values:
+              - Key
+          - name: Quick Disable
+            desc: Quick disable lock slots when this key is being held down
+            default_value: n/a
+            values:
+              - Key
+          - name: Config Switch Types
+            desc: Set config switch type to toggle or hold
+            default_value: Hold
+            values:
+              - Hold
+              - Toggle
+          - name: Show Locked Slots Background
+            desc: |
+              <p>Draw locked slots background</p>
+              <p>(You can create your own texture from</p>
+              <p>resourcepacks/<em>[pack_name]</em>/assets/inventoryprofilesnext/textures/gui/overlay.png)</p>
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Show Locked Slots Foreground
+            desc: |
+              <p>Draw locked slots foreground</p>
+              <p>(You can create your own texture from</p>
+              <p>resourcepacks/<em>[pack_name]</em>/assets/inventoryprofilesnext/textures/gui/overlay.png)</p>
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Locked Slots Foreground Style
+            desc: |
+              <p>Select foreground style from preset</p>
+              <p>(You can create your own texture from</p>
+              <p>resourcepacks/<em>[pack_name]</em>/assets/inventoryprofilesnext/textures/gui/overlay.png)</p>
+            default_value: 1
+            values:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+          - name: Disable SHIFT click/Ctrl+Q/Q for locked slots
+            desc: |
+              <p>Locked slots will be immune to:</p>
+              <ul>
+                <li>Shift+click</li>
+                <li>Ctrl+Q
+                <li>Swipe Shift+click</li>
+              </ul>
+              <p>Swipe Ctrl+Q</p>
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Enable picking items into empty locked slots
+            desc: |
+              <p>Should it be possible to pick items from the ground into EMPTY locked slots.</p>
+              <p>Stackable items will still be picked into locked sots of the same item that have room.</p>
+              <p>NOTE: See next setting description for more information</p>
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Ticks to wait on dimension change
+            desc: |
+              <p>The number of client ticks to wait before reinitialising the Locked Slot Keeper on word/dimension change.</p>
+              <p>If locked slots get items moved out/thrown away on dimension change you need to increase this value.</p>
+              <p>This often happens on servers under heavy load.</p>
+              <p>NOTE: 20 ticks are equivalent onf 1 second.</p>
+              <p><span style="color: red">WARNING</span>: Setting this too high MAY lead to locked slot management not working properly until this timeout expires.</p>
+            default_value: 5
+            values:
+              - A number from 5 to 100
+      - name: Auto Refill
+        options:
+          - name: Enable Auto Refill
+            desc: Refill the item in your hand when they have ran out
+            default_value: true
+            values: 
+              - true
+              - false
+          - name: Disable for drop item
+            desc: Disable Auto Refill for drop item
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Refill Armor
+            desc: Refill the item in armor slots when they have broken
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Refill Before Tool Break
+            desc: Refill tool/armor before durability is empty (threshold value by \"Tool Damage Threshold\")
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Tool Damage Threshold
+            desc: When durability below this value (Absolute or %%), refill the item.
+            default_value: 10
+            values:
+              - A number from 0 to 100
+          - name: Threshold Unit
+            desc: Set the unit for \"Tool Damage Threshold\" (Absolute Value or Percentage (%%))
+            default_value: Absolute Value
+            values:
+              - Absolute Value
+              - Percentage (%)
+          - name: Auto Refill Wait Tick
+            desc: Wait n ticks after the item ran out, then do the auto refill. Might be useful on some laggy servers.
+            default_value: 0
+            values:
+              - A number from 0 to 100
+      - name: Advanced Options
+        options:
+          - name: Add Interval Between Clicks
+            desc: Adds some interval between clicks while sorting. Amount of interval can be set by \"intervalBetweenClicksMs\". Might be useful on some laggy servers or inventory.fastclick disabled servers. (To bypass some servers, 67 ms is recommended)
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Interval Between Clicks (ms)
+            desc: Interval between clicks. In milliseconds. (To bypass some servers, 67 ms is recommended)
+            default_value: 10
+            values:
+              - A number from 1 to 500
+          - name: higlight_clicking_slot
+            desc: ""
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Restock Hotbar
+            desc: Auto restock your hotbar while sorting
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Sort At Cursor
+            desc: When this is true, using hotkey sorting will sort the slots that curosr is pointing to. Otherwise it will always sort the container.
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Move All At Cursor
+            desc: When curosr is pointing container, \"Move All\" hotkey move from container to player. Otherwise it will always move from player to container.
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Stop At Screen Close
+            desc: Stop sorting (when \"Add Interval Between Clicks\" enabled) if inventory screen is closed
+            default_value: false
+            values:
+              - true
+              - false
+      - name: Debugs
+        options:
+          - name: debug
+            desc:
+            default_value: false
+            values:
+              - true
+              - false
+  # - name: Gui Settings
+  # - name: Edit Profiles
+  # - name: Hotkeys
+  - name: Tweaks
+    sections:
+      - name: Inventory
+        options:
+          - name: Prevent Close Gui Drop Item
+            desc: Closing GUI will no longer drop the item that holding by the cursor
+            default_value: false
+            values:
+              - true
+              - false
+          - name: Container Swipe Moving Items
+            desc: Allows you to move items for the slots under the cursor while holding shift and left click
+            default_value: true
+            values:
+              - true
+              - false
+          - name: Swipe Move Crafting Result Slot
+            desc: Enable \"Swipe Moving Items\" in crafting result slot
+            default_value: false
+            values:
+              - true
+              - false
+  # - name: Debugs
