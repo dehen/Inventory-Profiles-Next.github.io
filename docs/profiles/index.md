@@ -1,3 +1,124 @@
 # Profiles
 
-To be written...
+## Before You Start
+
+You will need to set at least "Save the current state as "Saved" Profile" of the hotkeys in the Profiles section of "Hotkeys".
+Tinted green in this screenshot.
+<img src="/assets/profiles-save-profile-hotkeys-config.png"/>
+Of course you can set the set of the hotkeys while you're at it.
+
+## Your First Profile(s)
+
+1. Fill your hot bar and equipment slots with your favourite gear.
+2. Press the hotkey you configured above. **Note** that the hotkey **only works** when you have your inventory opened.
+3. Repeat for any combination of items you want.
+
+You are still not done. You have created a configuration, but you will need to edit it to make it work.
+
+## Some assembly required
+
+The in game profiles management is not ready yet. You will need to manually edit the configuration. Go to Edit Profiles and click "Profiles Config" button.
+<img src="/assets/edit-profiles-open-config.png"/>
+
+## The Basics
+
+Let's say we have saved 3 profiles:
+
+```
+profile Saved activate HOT1
+	HOT1
+		"minecraft:netherite_pickaxe" -> "Enchantments" : [{id:"minecraft:efficiency",lvl:5},{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:silk_touch",lvl:1},{id:"minecraft:mending",lvl:1}]
+	CHEST
+		"minecraft:elytra" -> "Enchantments" : [{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:mending",lvl:1}]
+
+profile Saved activate HOT1
+	HOT1
+		"minecraft:netherite_pickaxe" -> "Enchantments" : [{id:"minecraft:mending",lvl:1},{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:efficiency",lvl:5},{id:"minecraft:fortune",lvl:3}]
+	CHEST
+		"minecraft:elytra" -> "Enchantments" : [{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:mending",lvl:1}]
+
+profile Saved activate HOT1
+	CHEST
+		"minecraft:netherite_chestplate" -> "Enchantments" : [{id:"minecraft:fire_protection",lvl:4},{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:mending",lvl:1}]
+```
+To make them usable you need to set their names, change  `Saved` in `profile Saved` to something unique for all 3 of them. NO SPACES allowed!
+
+Go back to the screenshot above. Now is a good time to fill those Quick Profile names and if you haven't already assign them hotkeys. 
+
+Once you are ready with the names you need to reload the configuration. The default hot key is **R+Y**.
+
+That's it you are ready to go... 
+
+BUT if you want to use the full potential of the Profiles continue reading.
+
+## The long explanation 
+
+
+### Let's start from the beginning 
+`profile Saved activate HOT1`. This line says that we are starting a `profile` with name `Saved`
+and every time we switch to this profile it will `activate` the first hotbar slot `HOT1`. If you remove `activate HOT1` when you 
+activate the Profile the selected hotbat slot won't change.  
+
+### Slot definitions
+On the next line we have `HOT1`. This means that the lines below will contain the desired equipment in this slot. 
+
+`"minecraft:netherite_pickaxe"` We what to have a Netherite Pickaxe in this slot with the fallowing `-> "Enchantments" : `.
+The next part is list of the enchantments we want the item to have to be put in this slot. This is the minimum set of enchantments we desire.
+For example suppose we want a profile that always puts a Silk Touch pickaxe in hotbar 1 we can specify 
+```
+"minecraft:netherite_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
+```
+This means that when activating the Profile the best available Netherite Pickaxe with Silk Touch will be put in that slot.
+But this also means that if we have a bunch of Netherite Pickaxes without Silk Touch none of them will be put in the slot.
+
+#### "What if I just care about the Silk Touch?"
+
+Now we are talking! Profiles can be very powerful if you want them to be. Below we define that hotbar 1 should contain the best Silk Touch pickaxe we have.
+
+```
+profile Silky activate HOT1
+	HOT1
+		"minecraft:netherite_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
+		"minecraft:diamod_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
+		"minecraft:iron_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
+
+	CHEST
+		"minecraft:elytra" -> "Enchantments" : [{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:mending",lvl:1}]
+```
+So a hotbar slot definition can contain multiple items and the priority is defined by the order in the configuration.
+With the above we define that want a Silk Touch pickaxe and first choice would be Nethierite, then Diamond and last Iron. 
+
+#### "And if I don't really care about enchantments?"
+
+Every thing after the type `"minecraft:netherite_pickaxe"` of the item can be omitted. The above becomes:
+
+```
+profile Digger activate HOT1
+	HOT1
+		"minecraft:netherite_pickaxe"
+		"minecraft:diamod_pickaxe"
+		"minecraft:iron_pickaxe"
+```
+
+This will just select the "best" Pickaxe we have at the moment. And by best we mean the one with most enchantments and durability.
+
+#### Potions are different?!
+
+Although potions look like enchanted items they are not.
+
+Here how potion definitions look like. Except than the syntax there is not much difference from how enchantments are handled.
+```
+	HOT5
+		"minecraft:potion" -> "Potion" : {id:"minecraft:long_invisibility"}
+		"minecraft:lingering_potion" -> "Potion" : {id:"minecraft:long_invisibility"}
+	HOT8
+		"minecraft:splash_potion" -> "Potion" : {id:"minecraft:regeneration"}
+```
+You can imagine that only having `"minecraft:splash_potion"` doesn't make much sense, but you can. 
+You will end with a Splash Potion in that slot... But which one?! We don't know.
+
+### Some advanced uses
+
+You can define some single item profiles to make you live easier. For example Prfile for Elytra and 1 for Chest Plate, 
+so we will be able to switch between them faster. How about having dedicated profile with Water Bucket or Fire resistance
+potion in case you fall in lava.
