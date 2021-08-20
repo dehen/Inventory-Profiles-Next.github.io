@@ -114,11 +114,11 @@ Here how potion definitions look like. Except than the syntax there is not much 
 	HOT8
 		"minecraft:splash_potion" -> "Potion" : {id:"minecraft:regeneration"}
 ```
-You can imagine that only having `"minecraft:splash_potion"` doesn't make much sense, but you can. 
+You can imagine that only having `"minecraft:splash_potion"` doesn't make much sense, but you can.
 You will end with a Splash Potion in that slot... But which one?! We don't know.
 
 ### Some advanced uses
 
-You can define some single item profiles to make you live easier. For example Prfile for Elytra and 1 for Chest Plate, 
+You can define some single item profiles to make you live easier. For example 1 Profile for Elytra and 1 for Chest Plate, 
 so we will be able to switch between them faster. How about having dedicated profile with Water Bucket or Fire resistance
 potion in case you fall in lava.
