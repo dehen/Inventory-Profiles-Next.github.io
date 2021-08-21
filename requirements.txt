@@ -1,3 +1,4 @@
 mkdocs-material
 mkdocs-static-i18n
 mkdocs-minify-plugin
+git+https://github.com/Inventory-Profiles-Next/pygments-profiles-syntax.git

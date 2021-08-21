@@ -27,7 +27,7 @@ The in-game profiles management is not ready yet. You will need to manually edit
 
 Let's say we have saved 3 profiles:
 
-```
+```profiles
 profile Saved activate HOT1
 	HOT1
 		"minecraft:netherite_pickaxe" -> "Enchantments" : [{id:"minecraft:efficiency",lvl:5},{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:silk_touch",lvl:1},{id:"minecraft:mending",lvl:1}]
@@ -45,7 +45,7 @@ profile Saved activate HOT1
 		"minecraft:netherite_chestplate" -> "Enchantments" : [{id:"minecraft:fire_protection",lvl:4},{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:mending",lvl:1}]
 ```
 
-To make them usable you need to set their names, change `Saved` in `profile Saved` to something unique for all 3 of them. NO SPACES allowed!
+To make them usable you need to set their names, change `Saved` in `#!profiles profile Saved` to something unique for all 3 of them. NO SPACES allowed!
 
 Go back to the screenshot above. Now is a good time to fill those "Quick Profile" names, and if you didn't yet, assign them hotkeys.
 
@@ -59,19 +59,19 @@ BUT if you want to use the full potential of the Profiles continue reading.
 
 ### Let's start from the beginning
 
-The line `profile Saved activate HOT1` says that we are starting a `profile` with the name `Saved`
-and every time we switch to this profile it will `activate` the first hotbar slot `HOT1`. If you remove `activate HOT1` when you 
+The line `profile Saved activate HOT1` says that we are starting a `#!profiles profile` with the name `Saved`
+and every time we switch to this profile it will `#!profiles activate` the first hotbar slot `#!profiles HOT1`. If you remove `#!profiles activate HOT1` when you 
 activate the Profile the selected hotbat slot won't change.  
 
 ### Slot definitions
 
-On the next line we have `HOT1`. This means that the lines below will contain the desired equipment in this slot. 
+On the next line we have `#!profiles HOT1`. This means that the lines below will contain the desired equipment in this slot. 
 
-`"minecraft:netherite_pickaxe"` we want to have a Netherite Pickaxe in this slot with the following `-> "Enchantments" : `.
+`#!profiles "minecraft:netherite_pickaxe"` we want to have a Netherite Pickaxe in this slot with the following `#!profiles -> "Enchantments" : `.
 The next part is a list of the enchantments we want the item in this slot to have. This is the minimum set of the enchantments we desire.
 For example, suppose we want a profile that always puts a Silk Touch pickaxe in hotbar 1 we can specify:
 
-```
+```profiles
 "minecraft:netherite_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
 ```
 
@@ -82,7 +82,7 @@ But this also means that if we have a bunch of Netherite Pickaxes without Silk T
 
 Now we are talking! Profiles can be very powerful if you want them to be. Below we define that hotbar 1 should contain the best Silk Touch pickaxe we have.
 
-```
+```profiles
 profile Silky activate HOT1
 	HOT1
 		"minecraft:netherite_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
@@ -98,9 +98,9 @@ With the above we define that want a Silk Touch pickaxe and first choice would b
 
 #### "And if I don't really care about enchantments?"
 
-Every thing after the type `"minecraft:netherite_pickaxe"` of the item can be omitted. The above becomes:
+Every thing after the type `#!profiles "minecraft:netherite_pickaxe"` of the item can be omitted. The above becomes:
 
-```
+```profiles
 profile Digger activate HOT1
 	HOT1
 		"minecraft:netherite_pickaxe"
@@ -116,7 +116,7 @@ Although potions look like enchanted items, they are not.
 
 Here is how potion definitions look like. Except the syntax, there are not many differences from how enchantments are handled.
 
-```
+```profiles
 	HOT5
 		"minecraft:potion" -> "Potion" : {id:"minecraft:long_invisibility"}
 		"minecraft:lingering_potion" -> "Potion" : {id:"minecraft:long_invisibility"}
@@ -124,7 +124,7 @@ Here is how potion definitions look like. Except the syntax, there are not many 
 		"minecraft:splash_potion" -> "Potion" : {id:"minecraft:regeneration"}
 ```
 
-You can imagine that only having `"minecraft:splash_potion"` doesn't make much sense, but you can.
+You can imagine that only having `#!profiles "minecraft:splash_potion"` doesn't make much sense, but you can.
 You will end with a Splash Potion in that slot... But which one?! Nobody knows...
 
 ### Some advanced uses
