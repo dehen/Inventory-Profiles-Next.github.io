@@ -24,7 +24,7 @@ If you already have your mod loader and know how to install a mod, then you just
 
     - [This mod](../downloads/index.md)
 
-If you don't know how to install a mod, please follow the [tutorial](#tutorial).
+If you don't know how to install a mod, please follow the [tutorial:fontawesome-solid-arrow-down:](#tutorial).
 
 ---
 
