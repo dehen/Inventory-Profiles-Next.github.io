@@ -88,7 +88,7 @@ Now we are talking! Profiles can be very powerful if you want them to be. Below 
 profile Silky activate HOT1
 	HOT1
 		"minecraft:netherite_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
-		"minecraft:diamod_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
+		"minecraft:diamond_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
 		"minecraft:iron_pickaxe" -> "Enchantments" : [{id:"minecraft:silk_touch",lvl:1}]
 
 	CHEST
