@@ -59,7 +59,7 @@ BUT if you want to use the full potential of the Profiles continue reading.
 
 ### Let's start from the beginning
 
-The line `profile Saved activate HOT1` says that we are starting a `#!profiles profile` with the name `Saved`
+The line `#!profiles profile Saved activate HOT1` says that we are starting a `#!profiles profile` with the name `Saved`
 and every time we switch to this profile it will `#!profiles activate` the first hotbar slot `#!profiles HOT1`. If you remove `#!profiles activate HOT1` when you 
 activate the Profile the selected hotbat slot won't change.  
 
