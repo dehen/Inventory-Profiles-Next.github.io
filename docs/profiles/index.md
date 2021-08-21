@@ -45,7 +45,9 @@ profile Saved activate HOT1
 		"minecraft:netherite_chestplate" -> "Enchantments" : [{id:"minecraft:fire_protection",lvl:4},{id:"minecraft:unbreaking",lvl:3},{id:"minecraft:mending",lvl:1}]
 ```
 
-To make them usable you need to set their names, change `Saved` in `#!profiles profile Saved` to something unique for all 3 of them. NO SPACES allowed!
+To make them usable you need to set their names, change `Saved` in `#!profiles profile Saved` to something unique for all 3 of them.
+
+!!! warning "No spaces allowed in the name."
 
 Go back to the screenshot above. Now is a good time to fill those "Quick Profile" names, and if you didn't yet, assign them hotkeys.
 
