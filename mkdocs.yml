@@ -32,6 +32,8 @@ theme:
 markdown_extensions:
   - footnotes
   - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
