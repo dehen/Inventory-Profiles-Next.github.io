@@ -24,6 +24,11 @@
     margin: 0 0.5ch;
 }
 
+/* Now there is too much space to the left in the main titles */
+h1 .twemoji {
+    margin-left: 0;
+}
+
 /* Fixes for the icon in nav */
 nav .twemoji {
     display: inline-flex;
