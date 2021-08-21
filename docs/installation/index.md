@@ -2,6 +2,16 @@
 
 ## Briefly
 
+??? tip "Migrate from the old Inventory Profiles"
+
+    To Migrate from the old Inventory Profiles,
+
+    - Move `.minecraft/config/inventoryprofiles` somewhere
+    - Remove the old mod
+    - Install this mod
+    - Move back the `inventoryprofiles` folder from above
+    - Rename it to `inventoryprofilesnext`
+
 If you already have your mod loader and know how to install a mod, then you just need to install the following mods:
 
 === "Fabric"
@@ -20,7 +30,9 @@ If you don't know how to install a mod, please follow the [tutorial](#tutorial).
 
 ### 1. Install a mod loader
 
-To run this mod, you need a mod loader. There are two: [Fabric](https://fabricmc.net/) and [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/). If you don't know which to choose, we recommend Fabric.
+To run this mod, you need a mod loader. There are two: [Fabric](https://fabricmc.net/) and [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/). 
+
+!!! hint "If you don't know which to choose, we recommend Fabric."
 
 === "Fabric"
 
@@ -48,16 +60,6 @@ To run this mod, you need a mod loader. There are two: [Fabric](https://fabricmc
 
     1. [Download the mod](../downloads/index.md)
     2. Place it in the `.minecraft/mods` folder[^1]
-
-## Migrate
-
-To Migrate from the old Inventory Profiles,
-
-- Move `.minecraft/config/inventoryprofiles` somewhere
-- Remove the old mod
-- Install this mod
-- Move back the `inventoryprofiles` folder from above
-- Rename it to `inventoryprofilesnext`
 
 [^1]:
 
