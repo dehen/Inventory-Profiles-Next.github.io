@@ -26,6 +26,8 @@ If you already have your mod loader and know how to install a mod, then you just
 
 If you don't know how to install a mod, please follow the [tutorial](#tutorial).
 
+---
+
 ## Tutorial
 
 ### 1. Install a mod loader
