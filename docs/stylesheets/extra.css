@@ -37,3 +37,8 @@ nav .twemoji {
     fill: currentColor;
     vertical-align: text-top;
 }
+
+/* Better keys */
+.md-typeset kbd {
+    box-shadow: 0 .125rem 0 0 var(--md-typeset-kbd-border-color)
+}
