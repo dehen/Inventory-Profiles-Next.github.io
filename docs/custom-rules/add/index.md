@@ -70,11 +70,11 @@ Native rule list: see [List of Native Rule & Parameter](List-of-Native-Rule-&-Pa
         !::durability
     ```
 
-    #### Before
+    **Before**
 
     ![](https://i.imgur.com/Ll7J30E.png)
 
-    #### After
+    **After**
 
     ![](https://i.imgur.com/LnXLpoZ.png)
 
