@@ -33,6 +33,7 @@ markdown_extensions:
   - footnotes
   - attr_list
   - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.emoji:
