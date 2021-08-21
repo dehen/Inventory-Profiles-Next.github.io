@@ -49,7 +49,7 @@ To make them usable you need to set their names, change `Saved` in `#!profiles p
 
 Go back to the screenshot above. Now is a good time to fill those "Quick Profile" names, and if you didn't yet, assign them hotkeys.
 
-Once you are ready with the names, you need to reload the configuration. The default hotkey is **R+Y**.
+Once you are ready with the names, you need to reload the configuration. The default hotkey is ++r+y++ .
 
 That's it you are ready to go... 
 
