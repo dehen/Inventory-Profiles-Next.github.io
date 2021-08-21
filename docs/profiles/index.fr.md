@@ -1,3 +1,0 @@
-# Profils
-
-Écriture en cours...
