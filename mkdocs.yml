@@ -32,10 +32,12 @@ theme:
 markdown_extensions:
   - footnotes
   - attr_list
+  - admonition
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.details
   - pymdownx.tabbed
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
