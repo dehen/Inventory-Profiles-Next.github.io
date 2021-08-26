@@ -1,6 +1,6 @@
 /* More space at the bottom of the page */
-.md-footer {
-    margin-top: 1.5rem;
+.md-main__inner {
+    margin-bottom: 1.5rem;
 }
 
 /* Hide main nav title */
