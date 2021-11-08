@@ -1,15 +1,18 @@
 # Changelog
 
-### 1.0.0
-- fixes situations where the hot bar becomes inaccessible when opening double chest.
-- fixed enable picking up items in empty locked slots in single player on some platforms.
+### 1.1.4
+- added 1.15+ and 1.14.1+ versions. Just to be on par with the old mod
+- the fabric 1.16 version now runs on all minor versions
 
-### 0.9.0
-- Added equipment Profiles! You can now define sets of equipment and easily switch between them with a press of a button. Read more on how to set it up at [Profiles Documentation](https://inventory-profiles-next.github.io/profiles/)
-- Added support for over stacked items like [Carpet's](https://github.com/gnembon/fabric-carpet) stacking of empty shulkers
-- Fixed problem on Windows if the world name contains special characters.
-- Fixed Continuous crafting. Now it's 100% reliable.
-- All non-vanilla storages like Dank storage and Backpack will now be ignored by default.
-- Removed all "teaks" that might be considered cheating. Like disabling lava fog and various cooldowns. We never made them work in 1.17.x anyway.
-- Visit our new site [Inventory Profiles Next](https://inventory-profiles-next.github.io/) where you can find documentation about all the advanced features. 
+### 1.1.3
+- fixed java 8 incompatibility for 1.16.5 builds
 
+### 1.1.2
+- brand new Simplified Chinese translation thanks to @PVWXX
+- profiles now support empty slots. For example in one profile you have shield in the offhend slot and another profile want it empty. For items moved out in this case an attempt will be made to move them in a free locked slot.<br>
+  Just add the slot name without items in the configuration.
+- added full auto crafting. Just hold shift+alt while clicking on the crafting slot.
+- fixed sort in column and row buttons to. They were swapped.
+- fixed forge server crash.
+- fixed forge client complaining if IPN is not installed on the server.
+- made handling of ignored screens and inventories more robust.
