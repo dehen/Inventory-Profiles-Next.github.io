@@ -21,7 +21,7 @@
 
 /* Icon margins */
 .twemoji {
-    margin: 0 0.5ch;
+    margin: 0 .5em;
 }
 
 /* Now there is too much space to the left in the main titles */
@@ -36,6 +36,9 @@ nav .twemoji {
     width: 1.125em;
     fill: currentColor;
     vertical-align: text-top;
+}
+.md-nav__link {
+    justify-content: flex-start;
 }
 
 /* Better keys */
