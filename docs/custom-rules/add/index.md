@@ -78,6 +78,57 @@ Native rule list: see [List of Native Rule & Parameter](List-of-Native-Rule-&-Pa
 
     ![](https://i.imgur.com/LnXLpoZ.png)
 
+### Wildcards
+
+As of version 1.4.0 we support wildcards when it comes to item names so `stone*` will match every item that starts with `stone`
+
+!!! example "Example"
+    
+    Suppose we want to have all shulker boxes first. The example below:
+    - defines `all_boxes` rule that will match everything that ends on `shulker_box`
+    - defines our new main rule `MyDefault` that instructs that all items matching `all_boxes` will be put first and the rest shell be sorted as the `default` for the mod. 
+
+    ```
+    @MyDefault
+        @all_boxes
+        @default
+
+    @all_boxes
+        *shulker_box
+    ```
+
+#### Wildcards considerations
+
+* All wildcards are expanded before the rules file is parsed.
+
+!!! example "The above example expanded"
+
+    ```
+    @all_boxes
+        minecraft:black_shulker_box
+        minecraft:blue_shulker_box
+        minecraft:brown_shulker_box
+        minecraft:cyan_shulker_box
+        minecraft:gray_shulker_box
+        minecraft:green_shulker_box
+        minecraft:light_blue_shulker_box
+        minecraft:light_gray_shulker_box
+        minecraft:lime_shulker_box
+        minecraft:magenta_shulker_box
+        minecraft:orange_shulker_box
+        minecraft:pink_shulker_box
+        minecraft:purple_shulker_box
+        minecraft:red_shulker_box
+        minecraft:shulker_box
+        minecraft:white_shulker_box
+        minecraft:yellow_shulker_box
+    ```
+
+    Yes for IDs without namespace `minecraft` is assumed. If you need to specify modded items use the mod namespace. 
+
+* The expansion is always done in alphabetical order.
+* you can negate a wildcard with `!` for example `!*shulker_box` 
+
 ### Rule Override
 
 You can override the default rule and any custom rule (multiple declaration for same rule name)
