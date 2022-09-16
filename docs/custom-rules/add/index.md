@@ -53,7 +53,7 @@ All rules prefixed with `@`/`::`.
     - Each line defines a sub rule
     - `(` `)` optional arguments
 
-Native rule list: see [List of Native Rule & Parameter](List-of-Native-Rule-&-Parameter)
+Native rule list: see [List of Native Rule & Parameter](natives)
 
 !!! example "Example"
 
