@@ -33,7 +33,7 @@ A rule file can define multiple rules.
         ::nbt_comparator
     ```
 
-You can create multiple rule files: `rules.txt`, `rules.1.txt`, `rules.2.txt`, `rules.myname.txt`, `rules.*.txt` etc. They all should located in `.minecraft/config/inventoryprofiles` folder.
+You can create multiple rule files: `rules.txt`, `rules.1.txt`, `rules.2.txt`, `rules.myname.txt`, `rules.*.txt` etc. They all should located in `.minecraft/config/inventoryprofilesnext` folder. Note that rules are per-world, meaning you will have to put your new rule in the subfolder with the correct worldname.
 
 ### Rule Format Explain
 
@@ -97,7 +97,7 @@ As of version 1.4.0 we support wildcards when it comes to item names so `stone*`
         *shulker_box
     ```
 
-#### Wildcards considerations
+#### Wildcards and Tag considerations
 
 * All wildcards are expanded before the rules file is parsed.
 
@@ -128,6 +128,7 @@ As of version 1.4.0 we support wildcards when it comes to item names so `stone*`
 
 * The expansion is always done in alphabetical order.
 * you can negate a wildcard with `!` for example `!*shulker_box` 
+* Tags are also accepted, for example `#minecraft:stairs` will sort all blocks that are tagged as a type of stair, including mod stairs, if the mod author has properly tagged them.
 
 ### Rule Override
 
